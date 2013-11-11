@@ -1,5 +1,11 @@
 <h1>Coordinates Lookup</h1>
 
+<form action="/coords">
+  <label id="address">Input your address</label>
+  <input type="text" name="address">
+  <input type="submit" value="Get Coordinates">
+</form>
+
 <dl>
   <dt>Address:</dt>
   <dd><%= @address %></dd>
@@ -13,3 +19,7 @@
   <dt>Longitude:</dt>
   <dd><%= @longitude %></dd>
 </dl>
+
+<div style="width:500px;height:500px" id="map-canvas"/>
+
+
